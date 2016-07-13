@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Predictable</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="category_prompt">All</string>
+
+    <string-array name="category_arrays">
+        <item>All</item>
+        <item>Politics</item>
+        <item>Sports</item>
+        <item>Entertainment</item>
+        <item>Science &amp; Technology</item>
+    </string-array>
+
+    <string name="sort_promt">Top traded</string>
+
+    <string-array name="sort_arrays">
+        <item>Top traded</item>
+        <item>Highest Price</item>
+        <item>Lowest Price</item>
+        <item>Newest</item>
+        <item>Closest to deadline</item>
+    </string-array>
+
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_event_display">EventDisplayActivity</string>
+    <string name="title_activity_leaderboard">LeaderboardActivity</string>
+
+</resources>
