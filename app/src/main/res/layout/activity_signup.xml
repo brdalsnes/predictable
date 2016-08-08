@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="80dp"
+    android:paddingBottom="40dp"
+    tools:context="com.brdalsnes.predictable.LoginActivity"
+    android:background="@color/my_dark_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameEdit"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_margin="2dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailEdit"
+        android:inputType="textWebEmailAddress"
+        android:layout_below="@+id/usernameEdit"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEdit"
+        android:layout_below="@+id/emailEdit"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordCheckEdit"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_centerHorizontal="true"
+        android:hint="Retype password"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_margin="2dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/signupBtn"
+        android:layout_below="@+id/passwordCheckEdit"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:background="#FFFFFF"
+        android:textColor="@color/my_light_blue"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login!"
+        android:id="@+id/loginTextBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "664669342786",
+    "firebase_url": "https://predictable-88ea7.firebaseio.com",
+    "project_id": "predictable-88ea7",
+    "storage_bucket": "predictable-88ea7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664669342786:android:47106748852ff9ac",
+        "android_client_info": {
+          "package_name": "com.brdalsnes.predictable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664669342786-l412583l54o82itj7e5jr5seavf3fmqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGTN5FH7shwHK21u6mR0ur8vgSTHR3dNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

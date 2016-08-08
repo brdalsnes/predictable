@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topBar"
+        android:background="@drawable/first_bar_bg"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tickerTextView"
+            android:singleLine="true"
+            android:lines="1"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moneyTextView"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textColor="@color/my_yellow"
+            android:paddingRight="16dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tradePriceView"
+        android:layout_below="@+id/topBar"
+        android:text="Trading at:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceTextView"
+        android:layout_below="@+id/tradePriceView"
+        android:text="Total price:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:paddingLeft="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numTicketsEdit"
+        android:layout_below="@id/priceTextView"
+        android:inputType="number"
+        android:hint="Enter number of tickets"
+        android:paddingLeft="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/actionButton"
+        android:layout_below="@+id/numTicketsEdit"
+        android:background="@drawable/yes_btn_bg"
+        android:text="Buy"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

@@ -294,7 +294,7 @@ public class EventDisplayActivity extends Activity {
         });
 
     }
-
+    //hello
     public void priceChange(final int yesChange, final int noChange){
         final double a = 0.2; //Formula constant
 

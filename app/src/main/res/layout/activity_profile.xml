@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brdalsnes.predictable.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstBar"
+        android:background="@drawable/first_bar_bg"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leaderboardTextView"
+            android:layout_alignParentRight="true"
+            android:text="Leaderboard"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valuesTable"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/firstBar"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <TableRow
+            android:id="@+id/valuesFirstRow"
+            android:background="@color/my_dark_blue"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/valuesText"
+                android:textSize="20sp"
+                android:text=""/>
+            </TableRow>
+
+        <TableRow
+            android:id="@+id/moneyRow"
+            android:background="@drawable/cell_bg"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/leftText1"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="Net Worth"/>
+
+            <TextView
+                android:id="@id/netWorthTextView"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:paddingRight="4dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/my_green"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/netWorthRow"
+            android:background="@drawable/cell_bg"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/leftText2"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="Money"/>
+
+            <TextView
+                android:id="@id/moneyTextView"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:paddingRight="4dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/my_yellow"
+                />
+        </TableRow>
+        </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/holdingsTable"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/valuesTable"
+        android:layout_above="@+id/logoutBtn"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <TableRow
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_dark_blue"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tickerTextView"
+                android:text="Ticker"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:padding="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/valueTextView"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberTextView"
+                android:text="Number"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalTextView"
+                android:text="Total"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoutBtn"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:background="@drawable/yes_btn_bg"
+        android:textColor="@android:color/white"
+        android:layout_margin="16dp"/>
+
+
+</RelativeLayout>
